@@ -1,0 +1,11 @@
+// Login into your Azure container registry
+
+sudo az acr login --name appregistry1000
+
+// Tag your image
+
+#sudo docker tag dotnetapp appregistry1000.azurecr.io/dotnetapp
+
+// To push the image on acr
+# sudo docker push appregistry1000.azurecr.io/dotnetapp
+
